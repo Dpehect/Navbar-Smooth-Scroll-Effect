@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Navbar Smooth Scroll Effect</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="#Apple">Apple</a></li>
+          <li><a href="#Banana">Banana</a></li>
+          <li><a href="#Strawberry">Strawberry</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sections -->
+      <section id="Apple">
+        <h1>Apple</h1>
+        <p>Definition :Some kind of fruit.Color of apple is red.It has many benefits for human body.</p>
+        <p>
+          Example: I like apple so much!
+        </p>
+      </section>
+
+      <section id="Banana">
+        <h1>Banana</h1>
+        <p>Definition : Some kind of fruit.It can help to build muscle so that most of people like who has interest to gym like banana.</p>
+        <p>
+          Example: I always eat banana before go to gym.
+        </p>
+      </section>
+
+      <section id="Strawberry">
+        <h1>Strawberry</h1>
+        <p>
+          Definition : The low-growing plant which produces the strawberry, having white flowers, lobed leaves, and runners, and found throughout north temperate regions.
+        </p>
+        <p>
+          Example: My favourite milkshake type is strawberry milkshake
+        </p>
+      </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- JS Script -->
+    <script>
+      const scroll = new SmoothScroll('.navbar a[href*="#"]', {
+        speed: 500,
+      });
+    </script>
+  </body>
+</html>
